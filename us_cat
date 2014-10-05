@@ -1,4 +1,5 @@
-
+// xkb symbols file providing CaT's modified keyboard layout
+//
 
 partial alphanumeric_keys
 xkb_symbols "cat" {
