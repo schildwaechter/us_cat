@@ -2,7 +2,9 @@
 
 The `us_cat` Layout is a xkb keybord layout map intended for use
 with a us keyboard for typing primarily german but also providing
-diacritics for french and some slavic languages in latin script.
+diacritic characters for french and some slavic languages in latin script.
+
+There is also version for use with de keyboards included.
 
 ## installation
 
@@ -12,5 +14,4 @@ modify your system's `evdev.xml`.
 ## open questions
 
 - repurpose `<CAPS>`?
-- do `de`-based layout?
 

@@ -6,7 +6,10 @@ from lxml import etree
 
 EVDEV_FILENAME = '/usr/share/X11/xkb/rules/evdev.xml'
 
-EVDEV = etree.parse(EVDEV_FILENAME)
+CHANGES = 0
+
+parser = etree.XMLParser(remove_blank_text=True)
+EVDEV = etree.parse(EVDEV_FILENAME,parser)
 if len(EVDEV.xpath("./layoutList/layout/configItem/name[text()='us']"+
     "/../../variantList/variant/configItem/name[text()='cat']")) == 0:
     EVDEV.xpath("./layoutList/layout/configItem/name[text()='us']"+
@@ -16,9 +19,21 @@ if len(EVDEV.xpath("./layoutList/layout/configItem/name[text()='us']"+
                 "USA - CaT Custom Layout</description></configItem></variant>"
                 )
             )
+    CHANGES += 1
 
-NEWEVDEV = etree.tostring(EVDEV, pretty_print=True)
+if len(EVDEV.xpath("./layoutList/layout/configItem/name[text()='de']"+
+    "/../../variantList/variant/configItem/name[text()='cat']")) == 0:
+    EVDEV.xpath("./layoutList/layout/configItem/name[text()='de']"+
+            "/../../variantList")[0].append(
+            etree.fromstring(
+                "<variant><configItem><name>cat</name><description>"+
+                "DE - CaT Custom Layout</description></configItem></variant>"
+                )
+            )
+    CHANGES += 1
 
-with open(EVDEV_FILENAME, "w") as evdev_xml:
-    evdev_xml.write(NEWEVDEV.decode('utf-8'))
+if CHANGES >= 0:
+    NEWEVDEV = etree.tostring(EVDEV, pretty_print=True)
+    with open(EVDEV_FILENAME, "w") as evdev_xml:
+        evdev_xml.write(NEWEVDEV.decode('utf-8'))
 

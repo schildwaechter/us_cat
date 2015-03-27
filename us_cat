@@ -22,13 +22,12 @@ xkb_symbols "cat" {
     key <AE08> { [ 8,            asterisk,    bracketleft                                ] };
     key <AE09> { [ 9,            parenleft,   bracketright                               ] };
     key <AE10> { [ 0,            parenright,  braceright                                 ] };
-    key <AE11> { [ minus,        underscore,  endash                                     ] };
+    key <AE11> { [ minus,        underscore,  endash,               emdash               ] };
     key <AE12> { [ equal,        plus,        dead_acute,           dead_circumflex      ] };
-    key <BKSL> { [ backslash,    bar,         thinspace                                  ] };
- 
+
     key <AD01> { [ q,            Q,           at                                         ] };
     key <AD02> { [ w,            W                                                       ] };
-    key <AD03> { [ e,            E,           EuroSign                                   ] };
+    key <AD03> { [ e,            E,           EuroSign,             cent                 ] };
     key <AD04> { [ r,            R,           registered                                 ] };
     key <AD05> { [ t,            T,           trademark                                  ] };
     key <AD06> { [ y,            Y,           yen                                        ] };
@@ -38,6 +37,7 @@ xkb_symbols "cat" {
     key <AD10> { [ p,            P,           section                                    ] };
     key <AD11> { [ bracketleft,  braceleft,   leftdoublequotemark,  leftsinglequotemark  ] };
     key <AD12> { [ bracketright, braceright,  rightdoublequotemark, rightsinglequotemark ] };
+    key <BKSL> { [ backslash,    bar,         thinspace                                  ] };
 
     key <AC01> { [ a,            A,           adiaeresis,           Adiaeresis           ] };
     key <AC02> { [ s,            S,           ssharp,               U1E9E                ] };
@@ -64,6 +64,4 @@ xkb_symbols "cat" {
 
     include "level3(ralt_switch)"
 };
-
-
 

@@ -1,0 +1,68 @@
+// xkb symbols file providing CaT's modified keyboard layout
+//
+
+partial alphanumeric_keys
+xkb_symbols "cat" {
+
+    name[Group1]= "DE - CaT Custom Layout";
+
+    include "de(basic)"
+    include "eurosign(5)"
+
+    replace key <CAPS> { [ VoidSymbol, VoidSymbol ] };
+
+    key <TLDE> { [ asciicircum, degree,       dead_circumflex                          ] };
+    key <AE01> { [ 1,           exclam,       scaron,              Scaron              ] };
+    key <AE02> { [ 2,           quotedbl,     zcaron,              Zcaron              ] };
+    key <AE03> { [ 3,           section,      ccaron,              Ccaron              ] };
+    key <AE04> { [ 4,           dollar,       cacute,              Cacute              ] };
+    key <AE05> { [ 5,           percent,      dstroke,             Dstroke             ] };
+    key <AE06> { [ 6,           asciicircum,  ccedilla,            Ccedilla            ] };
+    key <AE07> { [ 7,           slash,        braceleft                                ] };
+    key <AE08> { [ 8,           parenleft,    bracketleft                              ] };
+    key <AE09> { [ 9,           parenright,   bracketright                             ] };
+    key <AE10> { [ 0,           equal,        braceright                               ] };
+    key <AE11> { [ ssharp,      question,     backslash,           U1E9E               ] };
+    key <AE12> { [ acute,       grave,        dead_acute,          dead_grave          ] };
+
+    key <AD01> { [ q,           Q,            at                                       ] };
+    key <AD02> { [ w,           W                                                      ] };
+    key <AD03> { [ e,           E,            EuroSign,            cent                ] };
+    key <AD04> { [ r,           R,            registered                               ] };
+    key <AD05> { [ t,           T,            trademark                                ] };
+    key <AD06> { [ z,           Z,            ae,                  AE                  ] };
+    key <AD07> { [ u,           U,            udiaeresis,          Udiaeresis          ] };
+    key <AD08> { [ i,           I                                                      ] };
+    key <AD09> { [ o,           O,            odiaeresis,          Odiaeresis          ] };
+    key <AD10> { [ p,           P,            section                                  ] };
+    key <AD11> { [ udiaeresis,  Udiaeresis                                             ] };
+    key <AD12> { [ plus,        asterisk,     asciitilde,          dead_tilde          ] };
+
+    key <AC01> { [ a,           A,            adiaeresis,          Adiaeresis          ] };
+    key <AC02> { [ s,           S,            ssharp,              U1E9E               ] };
+    key <AC03> { [ d,           D                                                      ] };
+    key <AC04> { [ f,           F                                                      ] };
+    key <AC05> { [ g,           G                                                      ] };
+    key <AC06> { [ h,           H                                                      ] };
+    key <AC07> { [ j,           J                                                      ] };
+    key <AC08> { [ k,           K                                                      ] };
+    key <AC09> { [ l,           L,            sterling                                 ] };
+    key <AC10> { [ odiaeresis,  Odiaeresis,   doublelowquotemark,  singlelowquotemark  ] };
+    key <AC11> { [ adiaeresis,  Adiaeresis,   leftdoublequotemark, leftsinglequotemark ] };
+    key <BKSL> { [ numbersign,  apostrophe,   grave,               circumflex          ] };
+
+    key <LSGT> { [ less,        greater,      bar                                      ] };
+    key <AB01> { [ y,           Y,            yen                                      ] };
+    key <AB02> { [ x,           X                                                      ] };
+    key <AB03> { [ c,           C,            copyright,           cent                ] };
+    key <AB04> { [ v,           V                                                      ] };
+    key <AB05> { [ b,           B                                                      ] };
+    key <AB06> { [ n,           N,            notsign                                  ] };
+    key <AB07> { [ m,           M,            mu,                  mu                  ] };
+    key <AB08> { [ comma,       semicolon,    guillemotleft,       U2039               ] };
+    key <AB09> { [ period,      colon,        guillemotright,      U203A               ] };
+    key <AB10> { [ minus,       underscore,   endash,              emdash              ] };
+
+    include "level3(ralt_switch)"
+};
+
