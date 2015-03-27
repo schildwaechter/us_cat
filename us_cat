@@ -12,19 +12,19 @@ xkb_symbols "cat" {
     replace key <CAPS> { [ VoidSymbol, VoidSymbol ] };
 
     key <TLDE> { [ grave,        asciitilde,  dead_grave,           dead_tilde           ] };
-    key <AE01> { [ 1,            exclam,      dead_circumflex                            ] };
-    key <AE02> { [ 2,            at,          dead_acute                                 ] };
-    key <AE03> { [ 3,            numbersign,  dead_diaeresis                             ] };
-    key <AE04> { [ 4,            dollar,      dead_cedilla                               ] };
-    key <AE05> { [ 5,            percent,     dead_caron                                 ] };
-    key <AE06> { [ 6,            asciicircum, scaron,               Scaron               ] };
-    key <AE07> { [ 7,            ampersand,   zcaron,               Zcaron               ] };
-    key <AE08> { [ 8,            asterisk,    ccaron,               Ccaron               ] };
-    key <AE09> { [ 9,            parenleft,   cacute,               Cacute               ] };
-    key <AE10> { [ 0,            parenright,  dstroke,              Dstroke              ] };
+    key <AE01> { [ 1,            exclam,      scaron,               Scaron               ] };
+    key <AE02> { [ 2,            at,          zcaron,               Zcaron               ] };
+    key <AE03> { [ 3,            numbersign,  ccaron,               Ccaron               ] };
+    key <AE04> { [ 4,            dollar,      cacute,               Cacute               ] };
+    key <AE05> { [ 5,            percent,     dstroke,              Dstroke              ] };
+    key <AE06> { [ 6,            asciicircum, ccedilla,             Ccedilla             ] };
+    key <AE07> { [ 7,            ampersand,   braceleft                                  ] };
+    key <AE08> { [ 8,            asterisk,    bracketleft                                ] };
+    key <AE09> { [ 9,            parenleft,   bracketright                               ] };
+    key <AE10> { [ 0,            parenright,  braceright                                 ] };
     key <AE11> { [ minus,        underscore,  endash                                     ] };
-    key <AE12> { [ equal,        plus,        thinspace                                  ] };
-    key <BKSL> { [ backslash,    bar,         U2022                                      ] };
+    key <AE12> { [ equal,        plus,        dead_acute,           dead_circumflex      ] };
+    key <BKSL> { [ backslash,    bar,         thinspace                                  ] };
  
     key <AD01> { [ q,            Q,           at                                         ] };
     key <AD02> { [ w,            W                                                       ] };
@@ -48,8 +48,8 @@ xkb_symbols "cat" {
     key <AC07> { [ j,            J                                                       ] };
     key <AC08> { [ k,            K                                                       ] };
     key <AC09> { [ l,            L,           sterling                                   ] };
-    key <AC10> { [ semicolon, colon,          doublelowquotemark,   singlelowquotemark   ] };
-    key <AC11> { [ apostrophe, quotedbl,      leftdoublequotemark,  leftsinglequotemark  ] };
+    key <AC10> { [ semicolon,    colon,       doublelowquotemark,   singlelowquotemark   ] };
+    key <AC11> { [ apostrophe,   quotedbl,    leftdoublequotemark,  leftsinglequotemark  ] };
 
     key <AB01> { [ z,            Z,           ae,                   AE                   ] };
     key <AB02> { [ x,            X                                                       ] };
@@ -58,8 +58,8 @@ xkb_symbols "cat" {
     key <AB05> { [ b,            B                                                       ] };
     key <AB06> { [ n,            N                                                       ] };
     key <AB07> { [ m,            M,           mu,                   mu                   ] };
-    key <AB08> { [ comma,        less         guillemotleft,        U2039                ] };
-    key <AB09> { [ period,       greater      guillemotright,       U203A                ] };
+    key <AB08> { [ comma,        less,        guillemotleft,        U2039                ] };
+    key <AB09> { [ period,       greater,     guillemotright,       U203A                ] };
     key <AB10> { [ slash,        question                                                ] };
 
     include "level3(ralt_switch)"
