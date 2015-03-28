@@ -8,8 +8,11 @@ There is also version for use with de keyboards included.
 
 ## installation
 
-Use the provided python script `evdev_xml_entry.py` to directly
-modify your system's `evdev.xml`.
+Place the files in `/usr/share/X11/xkb/symbols/` 
+and use as layout `us_cat` or `de_cat` with variant `cat` respectively.
+
+The python script `evdev_xml_entry.py` will directly modify your system's `evdev.xml`
+to show the layouts in the keyboard configuration gui. (Execute as root)
 
 ## open questions
 
