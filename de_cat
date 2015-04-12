@@ -49,16 +49,16 @@ xkb_symbols "cat" {
     key <AC09> { [ l,           L,            sterling                                 ] };
     key <AC10> { [ odiaeresis,  Odiaeresis,   doublelowquotemark,  singlelowquotemark  ] };
     key <AC11> { [ adiaeresis,  Adiaeresis,   leftdoublequotemark, leftsinglequotemark ] };
-    key <BKSL> { [ numbersign,  apostrophe,   grave,               circumflex          ] };
+    key <BKSL> { [ numbersign,  apostrophe,   grave                                    ] };
 
     key <LSGT> { [ less,        greater,      bar                                      ] };
     key <AB01> { [ y,           Y,            yen                                      ] };
     key <AB02> { [ x,           X                                                      ] };
-    key <AB03> { [ c,           C,            copyright,           cent                ] };
+    key <AB03> { [ c,           C,            copyright,           currency            ] };
     key <AB04> { [ v,           V                                                      ] };
     key <AB05> { [ b,           B                                                      ] };
     key <AB06> { [ n,           N,            notsign                                  ] };
-    key <AB07> { [ m,           M,            mu,                  mu                  ] };
+    key <AB07> { [ m,           M,            mu                                       ] };
     key <AB08> { [ comma,       semicolon,    guillemotleft,       U2039               ] };
     key <AB09> { [ period,      colon,        guillemotright,      U203A               ] };
     key <AB10> { [ minus,       underscore,   endash,              emdash              ] };
