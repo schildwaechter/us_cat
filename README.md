@@ -11,6 +11,8 @@ There is also version for use with de keyboards included.
 Place the files in `/usr/share/X11/xkb/symbols/` 
 and use as layout `us_cat` or `de_cat` with variant `cat` respectively.
 
+> **Note**: on upgrade delete `/var/lib/xkb/*.xkm` and manually re-apply the layout or reboot.
+
 The python script `evdev_xml_entry.py` will directly modify your system's `evdev.xml`
 to show the layouts in the keyboard configuration gui. (Execute as root)
 
