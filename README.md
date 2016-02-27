@@ -16,6 +16,10 @@ and use as layout `us_cat` or `de_cat` with variant `cat` respectively.
 The python script `evdev_xml_entry.py` will directly modify your system's `evdev.xml`
 to show the layouts in the keyboard configuration gui. (Execute as root)
 
+## other OSes
+
+Versions for Windows and OSX are included in the respective folders.
+
 ## open questions
 
 - repurpose `<CAPS>`?

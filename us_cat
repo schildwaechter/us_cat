@@ -26,7 +26,7 @@ xkb_symbols "cat" {
     key <AE12> { [ equal,        plus,        dead_acute,           dead_circumflex      ] };
 
     key <AD01> { [ q,            Q,           at                                         ] };
-    key <AD02> { [ w,            W,           permille                                   ] };
+    key <AD02> { [ w,            W,           sterling                                   ] };
     key <AD03> { [ e,            E,           EuroSign,             cent                 ] };
     key <AD04> { [ r,            R,           registered                                 ] };
     key <AD05> { [ t,            T,           trademark                                  ] };
@@ -44,15 +44,15 @@ xkb_symbols "cat" {
     key <AC03> { [ d,            D                                                       ] };
     key <AC04> { [ f,            F                                                       ] };
     key <AC05> { [ g,            G                                                       ] };
-    key <AC06> { [ h,            H                                                       ] };
-    key <AC07> { [ j,            J                                                       ] };
-    key <AC08> { [ k,            K                                                       ] };
-    key <AC09> { [ l,            L,           sterling                                   ] };
+    key <AC06> { [ h,            H,           leftarrow,            U21D0                ] };
+    key <AC07> { [ j,            J,           downarrow,            U21D3                ] };
+    key <AC08> { [ k,            K,           uparrow,              U21D1                ] };
+    key <AC09> { [ l,            L,           rightarrow,           U21D2                ] };
     key <AC10> { [ semicolon,    colon,       doublelowquotemark,   singlelowquotemark   ] };
     key <AC11> { [ apostrophe,   quotedbl,    leftdoublequotemark,  leftsinglequotemark  ] };
 
     key <AB01> { [ z,            Z,           ae,                   AE                   ] };
-    key <AB02> { [ x,            X,           approxeq                                   ] };
+    key <AB02> { [ x,            X,           multiply,             approxeq             ] };
     key <AB03> { [ c,            C,           copyright,            currency             ] };
     key <AB04> { [ v,            V,           ellipsis                                   ] };
     key <AB05> { [ b,            B,           infinity                                   ] };
