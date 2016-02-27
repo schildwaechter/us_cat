@@ -4,6 +4,8 @@ The `us_cat` Layout is a xkb keybord layout map intended for use
 with a us keyboard for typing primarily german but also providing
 diacritic characters for french and some slavic languages in latin script.
 
+![layout image](us_cat.png "The layout")
+
 There is also version for use with de keyboards included.
 
 ## installation
