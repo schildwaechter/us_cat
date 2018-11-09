@@ -34,14 +34,14 @@ xkb_symbols "cat" {
     key <AD07> { [ u,            U,           udiaeresis,           Udiaeresis           ] };
     key <AD08> { [ i,            I,           oslash,               Ooblique             ] };
     key <AD09> { [ o,            O,           odiaeresis,           Odiaeresis           ] };
-    key <AD10> { [ p,            P,           section                                    ] };
+    key <AD10> { [ p,            P,           aring,                Aring                ] };
     key <AD11> { [ bracketleft,  braceleft,   leftdoublequotemark,  leftsinglequotemark  ] };
     key <AD12> { [ bracketright, braceright,  rightdoublequotemark, rightsinglequotemark ] };
     key <BKSL> { [ backslash,    bar,         thinspace                                  ] };
 
     key <AC01> { [ a,            A,           adiaeresis,           Adiaeresis           ] };
     key <AC02> { [ s,            S,           ssharp,               U1E9E                ] };
-    key <AC03> { [ d,            D                                                       ] };
+    key <AC03> { [ d,            D,           section                                    ] };
     key <AC04> { [ f,            F                                                       ] };
     key <AC05> { [ g,            G                                                       ] };
     key <AC06> { [ h,            H,           leftarrow,            U21D0                ] };
