@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <keyboard group="0" id="8873" name="DE-CaT" maxout="1">
     <layouts>
-        <layout first="0" last="4" modifiers="84" mapSet="fb0"/>
-        <layout first="5" last="5" modifiers="84" mapSet="18c"/>
-        <layout first="8" last="9" modifiers="84" mapSet="18c"/>
-        <layout first="13" last="13" modifiers="84" mapSet="18c"/>
+        <layout first="0" last="4" mapSet="fb0" modifiers="84"/>
+        <layout first="5" last="5" mapSet="18c" modifiers="84"/>
+        <layout first="8" last="9" mapSet="18c" modifiers="84"/>
+        <layout first="13" last="13" mapSet="18c" modifiers="84"/>
     </layouts>
     <modifierMap id="84" defaultIndex="0">
         <keyMapSelect mapIndex="0">
@@ -448,7 +448,7 @@
         <keyMap index="3">
             <key code="0" output="ä"/>
             <key code="1" output="ß"/>
-            <key code="2" output=""/>
+            <key code="2" output="§"/>
             <key code="3" output=""/>
             <key code="4" output="←"/>
             <key code="5" output=""/>
@@ -481,7 +481,7 @@
             <key code="32" output="ü"/>
             <key code="33" output=""/>
             <key code="34" output="ø"/>
-            <key code="35" output="§"/>
+            <key code="35" output="å"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="→"/>
             <key code="38" output="↓"/>
@@ -593,7 +593,7 @@
             <key code="32" output="Ü"/>
             <key code="33" output=""/>
             <key code="34" output="Ø"/>
-            <key code="35" output=""/>
+            <key code="35" output="Å"/>
             <key code="36" output="&#x000D;"/>
             <key code="37" output="⇒"/>
             <key code="38" output="⇓"/>
@@ -1685,50 +1685,6 @@
         <action id="1">
             <when state="none" next="State 2"/>
         </action>
-        <action id="3">
-            <when state="none" next="State 4"/>
-        </action>
-        <action id="4">
-            <when state="none" next="State 5"/>
-        </action>
-        <action id="5">
-            <when state="none" output=" "/>
-            <when state="State 1" output="^"/>
-            <when state="State 2" output="´"/>
-            <when state="State 3" output="`"/>
-            <when state="State 4" output="¨"/>
-            <when state="State 5" output="~"/>
-        </action>
-        <action id="6">
-            <when state="none" output="a"/>
-            <when state="State 1" output="â"/>
-            <when state="State 2" output="á"/>
-            <when state="State 3" output="à"/>
-            <when state="State 4" output="ä"/>
-            <when state="State 5" output="ã"/>
-        </action>
-        <action id="7">
-            <when state="none" output="e"/>
-            <when state="State 1" output="ê"/>
-            <when state="State 2" output="é"/>
-            <when state="State 3" output="è"/>
-            <when state="State 4" output="ë"/>
-        </action>
-        <action id="8">
-            <when state="none" output="i"/>
-            <when state="State 1" output="î"/>
-            <when state="State 2" output="í"/>
-            <when state="State 3" output="ì"/>
-            <when state="State 4" output="ï"/>
-        </action>
-        <action id="9">
-            <when state="none" output="o"/>
-            <when state="State 1" output="ô"/>
-            <when state="State 2" output="ó"/>
-            <when state="State 3" output="ò"/>
-            <when state="State 4" output="ö"/>
-            <when state="State 5" output="õ"/>
-        </action>
         <action id="10">
             <when state="none" output="u"/>
             <when state="State 1" output="û"/>
@@ -1788,6 +1744,50 @@
         <action id="19">
             <when state="none" output="n"/>
             <when state="State 5" output="ñ"/>
+        </action>
+        <action id="3">
+            <when state="none" next="State 4"/>
+        </action>
+        <action id="4">
+            <when state="none" next="State 5"/>
+        </action>
+        <action id="5">
+            <when state="none" output=" "/>
+            <when state="State 1" output="^"/>
+            <when state="State 2" output="´"/>
+            <when state="State 3" output="`"/>
+            <when state="State 4" output="¨"/>
+            <when state="State 5" output="~"/>
+        </action>
+        <action id="6">
+            <when state="none" output="a"/>
+            <when state="State 1" output="â"/>
+            <when state="State 2" output="á"/>
+            <when state="State 3" output="à"/>
+            <when state="State 4" output="ä"/>
+            <when state="State 5" output="ã"/>
+        </action>
+        <action id="7">
+            <when state="none" output="e"/>
+            <when state="State 1" output="ê"/>
+            <when state="State 2" output="é"/>
+            <when state="State 3" output="è"/>
+            <when state="State 4" output="ë"/>
+        </action>
+        <action id="8">
+            <when state="none" output="i"/>
+            <when state="State 1" output="î"/>
+            <when state="State 2" output="í"/>
+            <when state="State 3" output="ì"/>
+            <when state="State 4" output="ï"/>
+        </action>
+        <action id="9">
+            <when state="none" output="o"/>
+            <when state="State 1" output="ô"/>
+            <when state="State 2" output="ó"/>
+            <when state="State 3" output="ò"/>
+            <when state="State 4" output="ö"/>
+            <when state="State 5" output="õ"/>
         </action>
         <action id="State 2">
             <when state="none" next="State 2"/>
