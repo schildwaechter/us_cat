@@ -62,6 +62,6 @@ xkb_symbols "cat" {
     key <AB09> { [ period,       greater,     guillemotright,       U203A                ] };
     key <AB10> { [ slash,        question                                                ] };
 
-    include "level3(ralt_switch)"
+    include "level3(alt_switch)"
 };
 

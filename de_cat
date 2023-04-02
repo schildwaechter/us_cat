@@ -63,6 +63,6 @@ xkb_symbols "cat" {
     key <AB09> { [ period,      colon,        guillemotright,       U203A                ] };
     key <AB10> { [ minus,       underscore,   endash,               emdash               ] };
 
-    include "level3(ralt_switch)"
+    include "level3(alt_switch)"
 };
 
