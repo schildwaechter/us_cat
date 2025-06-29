@@ -17,15 +17,15 @@ xkb_symbols "cat" {
     key <AE03> { [ 3,            numbersign,  ccaron,               Ccaron               ] };
     key <AE04> { [ 4,            dollar,      cacute,               Cacute               ] };
     key <AE05> { [ 5,            percent,     dstroke,              Dstroke              ] };
-    key <AE06> { [ 6,            asciicircum, ccedilla,             Ccedilla             ] };
-    key <AE07> { [ 7,            ampersand,   braceleft                                  ] };
-    key <AE08> { [ 8,            asterisk,    bracketleft                                ] };
-    key <AE09> { [ 9,            parenleft,   bracketright                               ] };
-    key <AE10> { [ 0,            parenright,  braceright                                 ] };
+    key <AE06> { [ 6,            asciicircum, dead_acute,           dead_circumflex      ] };
+    key <AE07> { [ 7,            ampersand,   dead_diaeresis,       dead_caron           ] };
+    key <AE08> { [ 8,            asterisk,    dead_abovering,       dead_cedilla         ] };
+    key <AE09> { [ 9,            parenleft,   bracketleft,          braceleft            ] };
+    key <AE10> { [ 0,            parenright,  bracketright,         braceright           ] };
     key <AE11> { [ minus,        underscore,  endash,               emdash               ] };
     key <AE12> { [ equal,        plus,        dead_acute,           dead_circumflex      ] };
 
-    key <AD01> { [ q,            Q,           at                                         ] };
+    key <AD01> { [ q,            Q,           aring,                Aring                ] };
     key <AD02> { [ w,            W,           sterling                                   ] };
     key <AD03> { [ e,            E,           EuroSign,             cent                 ] };
     key <AD04> { [ r,            R,           registered                                 ] };
@@ -43,13 +43,13 @@ xkb_symbols "cat" {
     key <AC02> { [ s,            S,           ssharp,               U1E9E                ] };
     key <AC03> { [ d,            D,           section                                    ] };
     key <AC04> { [ f,            F                                                       ] };
-    key <AC05> { [ g,            G                                                       ] };
+    key <AC05> { [ g,            G,           degree                                     ] };
     key <AC06> { [ h,            H,           leftarrow,            U21D0                ] };
     key <AC07> { [ j,            J,           downarrow,            U21D3                ] };
     key <AC08> { [ k,            K,           uparrow,              U21D1                ] };
     key <AC09> { [ l,            L,           rightarrow,           U21D2                ] };
-    key <AC10> { [ semicolon,    colon,       doublelowquotemark,   singlelowquotemark   ] };
-    key <AC11> { [ apostrophe,   quotedbl,    leftdoublequotemark,  leftsinglequotemark  ] };
+    key <AC10> { [ semicolon,    colon,       leftdoublequotemark,  leftsinglequotemark  ] };
+    key <AC11> { [ apostrophe,   quotedbl,    rightdoublequotemark, rightsinglequotemark ] };
 
     key <AB01> { [ z,            Z,           ae,                   AE                   ] };
     key <AB02> { [ x,            X,           multiply,             approxeq             ] };
@@ -60,7 +60,7 @@ xkb_symbols "cat" {
     key <AB07> { [ m,            M,           mu                                         ] };
     key <AB08> { [ comma,        less,        guillemotleft,        U2039                ] };
     key <AB09> { [ period,       greater,     guillemotright,       U203A                ] };
-    key <AB10> { [ slash,        question                                                ] };
+    key <AB10> { [ slash,        question,    doublelowquotemark,   singlelowquotemark   ] };
 
     include "level3(alt_switch)"
 };

@@ -22,18 +22,6 @@ if len(EVDEV.xpath("./layoutList/layout/configItem/name[text()='us_cat']")) == 0
             )
     CHANGES += 1
 
-if len(EVDEV.xpath("./layoutList/layout/configItem/name[text()='de_cat']")) == 0:
-    EVDEV.xpath("./layoutList/layout/configItem/name[text()='de']"+
-            "/../../..")[0].append(
-            etree.fromstring(
-                "<layout><configItem><name>de_cat</name><shortDescription>de</shortDescription>"+
-                "<description>CaT's Custom Layout (DE)</description><languageList><iso639Id>ger</iso639Id>"+
-                "</languageList></configItem><variantList><variant><configItem><name>cat</name>"+
-                "<description>CaT's Custom Layout (DE)</description></configItem></variant></variantList></layout>"
-                )
-            )
-    CHANGES += 1
-
 if CHANGES >= 0:
     NEWEVDEV = etree.tostring(EVDEV, pretty_print=True)
     with open(EVDEV_FILENAME, "w") as evdev_xml:
